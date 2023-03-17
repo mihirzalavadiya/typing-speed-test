@@ -12,7 +12,7 @@ body {
   /* align-items: center; */
   /* justify-content: center; */
   /* min-height: 100vh; */
-  background: #0abfe3;
+  background: #0b192f;
 }
 body::after {
   content: '';
@@ -33,12 +33,13 @@ body::after {
 }
 ::selection {
   color: #fff;
-  background: #0abfe3;
+  background: #34b798;
 }
 .wrapper {
   width: 770px;
   padding: 25px;
-  background: #fff;
+  /* background: #fff; */
+  background: #0b192f;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
   position: absolute;
@@ -71,18 +72,20 @@ body::after {
 }
 .typing-text p span {
   position: relative;
+  color: #9ca3af;
 }
 .typing-text p span.correct {
-  color: #00a2ff;
+  color: #64ffda;
+
 }
 .typing-text p span.incorrect {
   color: #cb3439;
-  /* outline: 1px solid #fff; */
-  /* background: #ffc0cb; */
-  /* border-radius: 4px; */
+  outline: 1px solid #cb3439;
+  background: #ffc0cb;
+  border-radius: 4px;
 }
 .typing-text p span.active {
-  color: #30393b;
+  color: #dddddd;
 }
 .typing-text p span.active::before {
   position: absolute;
@@ -93,7 +96,7 @@ body::after {
   left: 0;
   opacity: 0;
   border-radius: 5px;
-  background: #0abfe3;
+  color: #64ffda;
   animation: blink 1s ease-in-out infinite;
 }
 @keyframes blink {
@@ -114,12 +117,12 @@ body::after {
   outline: none;
   border: none;
   width: 105px;
-  color: #fff;
+  color: #30393b;
   padding: 8px 0;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  background: #0abfe3;
+  background: #64ffda;
   transition: transform 0.3s ease;
 }
 .content button:active {
@@ -131,6 +134,7 @@ body::after {
   align-items: center;
   width: calc(100% - 140px);
   justify-content: space-between;
+  color: #9ca3af;
 }
 .result-details li {
   display: flex;
